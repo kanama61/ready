@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculating My Money</title>
+    </head>
+    <body>
+        <div class="maindiv">
+        <h1>Simple Interest Calculator</h1>
+        <table>
+        <tr><td>Amount </td><td><input type="number"  id="principal"></td><td></td></tr>
+        <tr><td>Rate </td><td><input type="range"  id="rate" onchange="updateRate()" min=1 max=20 value=10.25 step="0.25">
+        <td><span id="rate_val">10.25%</span></td></tr>
+        <!--<label for="lata">Choose how many years:</label>
+        <input type="number" list="lata">  <br>
+        
+        <datalist id="lata">
+            <option value="1">
+            <option value="2">
+            <option value="3">
+            <option value="4">
+            <option value="5">
+            <option value="6">
+            <option value="7">
+            <option value="8">
+            <option value="9">
+            <option value="10">
+        </datalist><br>
+    -->
+        <tr><td>No of years </td><td><select id="years">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></td><td></td></tr>
+        <tr><td><button onclick="compute()">Compute Interest</button></td><td></td><td></td></tr>
+    </table>
+         Interest : <br><span id="result">
+        </span><br>
+        </div>
+        <footer>
+            &#169; This Calculator belongs to Miroslaw Zastocki
+        </footer>
+    </body>
+</html>
