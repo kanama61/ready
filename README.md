@@ -1,2 +1,2 @@
 # ready
- It's developed according to the instruction from the edX course.
+ It's been developed according to the instruction from the edX course.
